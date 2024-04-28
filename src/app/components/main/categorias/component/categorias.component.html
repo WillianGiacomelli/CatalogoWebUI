@@ -1,1 +1,22 @@
-<p>categorias works!</p>
+<div class="py-5">
+  <h2 class="text-center">Lista de categorias</h2>
+</div>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col" *ngFor="let category of displayedCategories">{{ category }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(item of dataSource; track item.nome){
+      <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.nome}}</td>
+        <td>{{item.imagemUrl}}</td>
+        <td></td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

@@ -1,14 +1,11 @@
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
-import {Component} from '@angular/core';
-
-/** @title Responsive sidenav */
 @Component({
   selector: 'app-menu',
   templateUrl: 'menu.component.html',
   styleUrl: 'menu.component.css',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
 })
-export class MenuComponent  {
-
-}
+export class MenuComponent {}
